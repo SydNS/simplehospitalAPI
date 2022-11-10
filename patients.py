@@ -18,7 +18,7 @@ def staff_specified(hospitalstaff):
 	return jsonify({'hospital workers include':grp[0]})
 
 @app.route("/fulltime", methods=['GET'])
-def fulltim():
+def fulltime():
 	return jsonify({'fulltime':fulltime})
 
 @app.route("/fulltime/<string:specified>", methods=['GET'])
